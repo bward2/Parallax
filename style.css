@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+img {
+    height: 30px;
+}
+
+.night-sky {
+    background: linear-gradient(black, navy);
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 100vh 0;
+}
+
+.near {
+    transform: translateZ(0);
+}
+
+.far {
+    transform: translateZ(-2px);
+}
+
+.little {
+    height: 50px;
+}
+
+.star1 {
+    position: relative;
+    top: -90vh;
+    left: 11vw;
+    transform: rotate(-18deg);
+}
+
+.star2 {
+    position: relative;
+    top: -69vh;
+    left: 54vw;
+    transform: rotate(18deg);
+}
+
+.star3 {
+    position: relative;
+    top: -351px;
+    left: 39vw;
+    transform: rotate(-4deg);
+}

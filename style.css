@@ -3,7 +3,7 @@ body {
 }
 
 img {
-    height: 30px;
+    max-height: 5.5vh;
 }
 
 .night-sky {
@@ -13,7 +13,6 @@ img {
 .parallax {
     perspective: 1px;
     height: 100vh;
-    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -26,35 +25,14 @@ img {
     padding: 100vh 0;
 }
 
-.near {
+#near {
     transform: translateZ(0);
 }
 
-.far {
+#far {
     transform: translateZ(-2px);
 }
 
-.little {
-    height: 50px;
-}
-
-.star1 {
-    position: relative;
-    top: -90vh;
-    left: 11vw;
-    transform: rotate(-18deg);
-}
-
-.star2 {
-    position: relative;
-    top: -69vh;
-    left: 54vw;
-    transform: rotate(18deg);
-}
-
-.star100 {
-    position: relative;
-    top: -180vh;
-    left: 39vw;
-    transform: rotate(-4deg);
+#really-far {
+    transform: translateZ(-5px);
 }

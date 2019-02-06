@@ -52,9 +52,9 @@ img {
     transform: rotate(18deg);
 }
 
-.star3 {
+.star100 {
     position: relative;
-    top: -351px;
+    top: -180vh;
     left: 39vw;
     transform: rotate(-4deg);
 }

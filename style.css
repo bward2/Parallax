@@ -1,38 +1,39 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 img {
-    max-height: 5.5vh;
+  max-height: 5.5vh;
 }
 
 .night-sky {
-    background: linear-gradient(black, navy);
+  background: linear-gradient(black, navy);
 }
 
 .parallax {
-    perspective: 1px;
-    height: 100vh;
-    overflow-y: auto;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .parallax-layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 100vh 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 100vh 0;
 }
 
 #near {
-    transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 #far {
-    transform: translateZ(-2px);
+  transform: translateZ(-2px);
 }
 
 #really-far {
-    transform: translateZ(-5px);
+  transform: translateZ(-5px);
 }

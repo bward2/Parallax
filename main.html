@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-    <head>
-        <link rel='stylesheet' href='style.css'>
-    </head>
+  <head>
+    <script src='add-stars.js'></script>
+    <link rel='stylesheet' href='style.css'>
 
-    <body>
-        <div class='parallax night-sky'>
-            <div id="near" class="parallax-layer">
-                <img src='assets/star.svg'>
-            </div>
-            <div id="far" class="parallax-layer">
-                <img src='assets/star.svg'>
-            </div>
-            <div id="really-far" class="parallax-layer">
-                <img src='assets/star.svg'>
-            </div>
-        </div>
-    </body>
+    <script>
+      window.onload = () => {
+        init();
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class='parallax night-sky'>
+      <div id="near" class="parallax-layer">
+        <img src='assets/star.svg'>
+      </div>
+      <div id="far" class="parallax-layer">
+        <img src='assets/star.svg'>
+      </div>
+      <div id="really-far" class="parallax-layer">
+        <img src='assets/star.svg'>
+      </div>
+    </div>
+  </body>
 </html>

@@ -6,7 +6,7 @@ img {
   max-height: 5.5vh;
 }
 
-.night-sky {
+#night-sky {
   background: linear-gradient(black, navy);
 }
 
@@ -24,16 +24,4 @@ img {
   bottom: 0;
   left: 0;
   padding: 100vh 0;
-}
-
-#near {
-  transform: translateZ(0);
-}
-
-#far {
-  transform: translateZ(-2px);
-}
-
-#really-far {
-  transform: translateZ(-5px);
 }

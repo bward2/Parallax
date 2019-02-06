@@ -10,8 +10,17 @@ function calcProperty(prop, scale) {
   return randomInt(min, max);
 }
 
-function addStars(scale, starGroup) {
+function createStarGroup(scale) {
+  const starGroup = document.createElement('div');
+  starGroup.classList.add('parallax-layer');
+  starGroup.style.transform = `translateZ(-${scale}px)`;
+  return starGroup;
+}
+
+function addStars(sky, scale) {
   const count = (scale * 0.5) + 10;
+  const starGroup = createStarGroup(scale);
+  sky.appendChild(starGroup);
 
   for(let i = 0; i < count; i++) {
     let star = document.createElement('img');
@@ -25,11 +34,11 @@ function addStars(scale, starGroup) {
 }
 
 function init() {
-  const near = document.getElementById('near');
-  const far = document.getElementById('far');
-  const reallyFar = document.getElementById('really-far');
+  const sky = document.getElementById('night-sky');
 
-  addStars(0, near);
-  addStars(2, far);
-  addStars(5, reallyFar);
+  addStars(sky, 0);
+  addStars(sky, 2);
+  addStars(sky, 5);
+  addStars(sky, 10);
+  addStars(sky, 20);
 }

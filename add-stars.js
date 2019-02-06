@@ -18,7 +18,7 @@ function createStarGroup(scale) {
 }
 
 function addStars(sky, scale) {
-  const count = (scale * 0.5) + 10;
+  const count = (scale * 5) + 10;
   const starGroup = createStarGroup(scale);
   sky.appendChild(starGroup);
 
@@ -36,9 +36,7 @@ function addStars(sky, scale) {
 function init() {
   const sky = document.getElementById('night-sky');
 
-  addStars(sky, 0);
-  addStars(sky, 2);
-  addStars(sky, 5);
-  addStars(sky, 10);
-  addStars(sky, 20);
+  for (let i = 0; i <= 10; i++) {
+    addStars(sky, i);
+  }
 }

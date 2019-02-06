@@ -13,7 +13,7 @@ function calcProperty(prop, scale) {
 function createStarGroup(scale) {
   const starGroup = document.createElement('div');
   starGroup.classList.add('parallax-layer');
-  starGroup.style.transform = `translateZ(-${scale}px)`;
+  starGroup.style.transform = `translate3d(0, 0, -${scale}px)`;
   return starGroup;
 }
 

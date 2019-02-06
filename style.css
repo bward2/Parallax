@@ -6,7 +6,7 @@ img {
   max-height: 5.5vh;
 }
 
-#night-sky {
+#backdrop {
   background: linear-gradient(black, navy);
 }
 
@@ -17,11 +17,17 @@ img {
   overflow-y: auto;
 }
 
+.parallax-group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
 .parallax-layer {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 200vh 0;
+  padding: 100vh 0;
 }
